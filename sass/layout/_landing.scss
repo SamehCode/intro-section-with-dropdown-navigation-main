@@ -1,0 +1,103 @@
+.landing {
+    background: #eee;
+    height: calc(100vh - 79px);
+    overflow: hidden;
+    padding: 1rem 0;
+    @media #{$maxSmall} {
+        overflow: auto;
+    }
+    .container {
+        @media #{$maxSmall} {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .col-6 {
+            @media #{$maxSmall} {
+                width: 100%;
+            }
+            .title {
+                @media #{$maxSmall} {
+                    margin-top: 0;
+                    text-align: center;
+                }
+                margin-top: 3rem;
+                h1.main-heading {
+                    @media #{$maxSmall} {
+                        
+                    }
+                    font-size: 3rem;
+                    text-transform: capitalize;
+                    // font-weight: bold;
+                    
+                    padding-top: 2rem;
+                    span {
+                        display: block;
+                    }
+                }
+                p {
+                    color: $grey;
+                    font-weight: bold;
+                    margin: 1.5rem 0;
+                    line-height: 1.7;
+                    padding-right: 2rem;
+                }
+                button {
+                    background-color: $black;
+                    padding: .7rem 2rem;
+                    margin: 0 0 2rem;
+                    border-radius: .7rem;
+                    transition: .3s;
+                    &:hover {
+                        background-color: $white;
+                        a {
+                            color: $black;
+                        }
+                    }
+                    a {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 1.25rem;
+                        text-transform: capitalize;
+                        
+                    }
+                }
+            }
+            .clients {
+                @media #{$maxSmall} {
+                    justify-content: center;
+                }
+                display: flex;
+                gap: 30px;
+                margin-top: 3rem;
+                .client {
+                    cursor: pointer;
+                }
+            }
+        }
+        .col-1 {
+            @media #{$maxSmall} {
+                display: none;
+            }
+            height: 1px;
+        }
+        .col-5 {
+            @media #{$maxSmall} {
+                width: 100%;
+            }
+            img {
+                max-height: 500px;
+
+                @media #{$maxSmall} {
+                    &.desktop {
+                        display: none;
+                    }
+                }
+                @media #{$minMedium} {
+                    &.mobile {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

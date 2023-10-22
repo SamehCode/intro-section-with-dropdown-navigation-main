@@ -1,0 +1,81 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name='description' content='front end mentor challege')
+        title Intro section with dropdown navigation
+        link(rel='stylesheet' href='main.css')
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+    body
+        //- Start header
+        .overlay
+        header
+            .container
+                .left
+                    h3.logo snap
+                    nav
+                        ul(class='links')
+                            li(class='feat', data-li='0')
+                                a features
+                                ul.drop-links.one
+                                    li
+                                        img(src='images/icon-reminders.svg')
+                                        a todo list 
+                                    li
+                                        img(src='images/icon-calendar.svg')
+                                        a calender
+                                    li
+                                        img(src='images/icon-todo.svg')
+                                        a remainders
+                                    li 
+                                        img(src='images/icon-planning.svg')
+                                        a planning
+                            li(class='com', data-li='1')
+                                a company
+                                ul.drop-links.two
+                                    li: a history
+                                    li: a out team
+                                    li: a blog
+                            li: a careers
+                            li: a about
+                .right
+                    form
+                        input(type='submit' class='log' value='Login')
+                        input(type='submit' class='reg' value='Register')
+                    .toggle
+                        span
+                        |
+                        |
+                        span
+                        |
+                        |
+                        span
+                    .close X
+        //- End header
+        //-  Start landing
+        section.landing
+            .container
+                .col-6
+                    .title
+                        h1.main-heading make 
+                            span remote work
+                        p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                        button: a.more learn more
+                    .clients
+                        .client
+                            img(src='images/client-databiz.svg')
+                        .client
+                            img(src='images/client-audiophile.svg')
+                        .client
+                            img(src='images/client-maker.svg')
+                        .client
+                            img(src='images/client-meet.svg')
+                .col-1
+                .col-5
+                    img(class='img-responsive desktop')(src='images/image-hero-desktop.png')
+                    img(class='img-responsive mobile')(src='images/image-hero-mobile.png')
+                .clearfix
+        script(src='main.js')
+        //-  End landing                  

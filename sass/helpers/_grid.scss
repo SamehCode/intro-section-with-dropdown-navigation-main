@@ -1,0 +1,26 @@
+$grid-cols: 12;
+
+@for $i from 1 through $grid-cols {
+    .col-#{$i} {
+        float: left;
+        width: calc(100% / ($grid-cols / $i))
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    @media #{$minSmall} {
+        width: 540px;
+    }
+    @media #{$minMedium} {
+        width: 730px
+    }
+    @media #{$minLarge} {
+        width: 940px
+    }
+    @media #{$minXLarge} {
+        width: 1140px
+    }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="front end mentor challege">
+    <title>Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="main.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <header>
+      <div class="container">
+        <div class="left">
+          <h3 class="logo">snap</h3>
+          <nav>
+            <ul class="links">
+              <li class="feat" data-li="0"><a>features</a>
+                <ul class="drop-links one">
+                  <li><img src="images/icon-reminders.svg"><a>todo list </a></li>
+                  <li><img src="images/icon-calendar.svg"><a>calender</a></li>
+                  <li><img src="images/icon-todo.svg"><a>remainders</a></li>
+                  <li> <img src="images/icon-planning.svg"><a>planning</a></li>
+                </ul>
+              </li>
+              <li class="com" data-li="1"><a>company</a>
+                <ul class="drop-links two">
+                  <li><a>history</a></li>
+                  <li><a>out team</a></li>
+                  <li><a>blog</a></li>
+                </ul>
+              </li>
+              <li><a>careers</a></li>
+              <li><a>about</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="right">
+          <form>
+            <input class="log" type="submit" value="Login">
+            <input class="reg" type="submit" value="Register">
+          </form>
+          <div class="toggle"><span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="close">X</div>
+        </div>
+      </div>
+    </header>
+    <section class="landing">
+      <div class="container">
+        <div class="col-6">
+          <div class="title">
+            <h1 class="main-heading">make <span>remote work</span></h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+            <button><a class="more">learn more</a></button>
+          </div>
+          <div class="clients">
+            <div class="client"><img src="images/client-databiz.svg"></div>
+            <div class="client"><img src="images/client-audiophile.svg"></div>
+            <div class="client"><img src="images/client-maker.svg"></div>
+            <div class="client"><img src="images/client-meet.svg"></div>
+          </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-5"><img class="img-responsive desktop" src="images/image-hero-desktop.png"><img class="img-responsive mobile" src="images/image-hero-mobile.png"></div>
+        <div class="clearfix"></div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

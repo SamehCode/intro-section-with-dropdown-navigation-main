@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+button {
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.clearfix {
+    clear: both;
+}
